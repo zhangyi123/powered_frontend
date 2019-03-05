@@ -1,3 +1,11 @@
+/* HEADER */
+
+.ml-auto a {
+  margin-right: 15px;
+}
+
+/* APP COMPONENT */
+
 .App {
   text-align: center;
 }
@@ -21,6 +29,75 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.jumbotron {
+  min-height: 500px;
+  padding: 175px 50px 0 50px !important;
+  background-image: url("./assets/pic.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works .product-list {
+  justify-content: center;
+}
+
+.how-it-works .product {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* SECTION */
+.section {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.product-list {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.product {
+  width: 15%;
+}
+
+/* CATEGORIES */
+
+.category-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-list .card {
+  width: 250px;
+  height: 250px;
+}
+
+.category {
+  margin: 15px;
+}
+
+.card-img-overlay {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ddd;
 }
 
 @keyframes App-logo-spin {
