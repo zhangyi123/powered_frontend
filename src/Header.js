@@ -10,7 +10,7 @@ class Header extends React.Component {
   return (
     <div className='header'>
       <header>
-      <Navbar bg="dark" variant="dark" fixed="top">
+      <Navbar bg="dark" variant="dark" fixed="top" expand="md">
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -22,9 +22,9 @@ class Header extends React.Component {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Form inline>
+          <Form inline className="search-bar">
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
+            <Button className="search-btn" variant="outline-success">Search</Button>
           </Form>
           <Nav className="ml-auto">
             <Nav.Link href="#home">Order</Nav.Link>

@@ -8,6 +8,7 @@ class Section extends Component {
         <div className="product-list">
           {this.props.products.map((item,i) => (
             <Product
+              key={i}
               description={item.description}
               brand = {item.brand}
               price = {item.price}  />

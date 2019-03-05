@@ -8,7 +8,7 @@ class CategorySection extends Component {
         <h1>{this.props.title}</h1>
         <div className="category-list">
           {this.props.categories.map((item, i) => (
-            <Category title={item.title} />
+            <Category key={i} title={item.title} />
           ))}
         </div>
       </div>

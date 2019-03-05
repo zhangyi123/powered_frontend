@@ -32,8 +32,11 @@
 }
 
 .jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 50px !important;
   min-height: 500px;
-  padding: 175px 50px 0 50px !important;
   background-image: url("./assets/pic.jpg");
   background-size: cover;
   color: white;
@@ -49,23 +52,53 @@
   justify-content: center;
 }
 
-.how-it-works .product {
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 /* SECTION */
 .section {
   margin-top: 35px;
   margin-bottom: 35px;
 }
+
 .product-list {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
+
 .product {
-  width: 15%;
+  max-width: 200px;
+  margin: 25px;
+}
+
+/* HD Laptop Styles */
+@media only screen and (min-width: 1439px) {
+  .jumbotron {
+    padding: 15px 200px 0 200px !important;
+  }
+
+  .jumbotron h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 450px) {
+  .jumbotron {
+    padding: 50px 15px 0 15px !important;
+  }
+
+  .product {
+    max-width: 150px;
+    margin: 15px;
+  }
+
+  .navbar-collapse {
+    padding-top: 15px;
+  }
+
+  .search-btn {
+    display: none !important;
+  }
 }
 
 /* CATEGORIES */
